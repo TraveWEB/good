@@ -1,6 +1,6 @@
 header {
-  background-image: url(.//img/header.jpg);
   display: flex;
+  background: url(./img/header.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,6 +105,7 @@ header {
 .header_menu.active {
   position: absolute;
   backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.5);
   width: 350px;
   height: 100vh;
@@ -118,7 +119,6 @@ header {
   padding: 0;
   justify-content: center;
   justify-content: space-between;
-  -webkit-backdrop-filter: blur(20px);
 }
 
 .header_menu-a {
@@ -237,3 +237,133 @@ button {
     width: 175px;
   }
 }
+
+
+/* ---------------------------
+
+
+
+          SECTION_1
+
+
+
+---------------------------- */
+
+
+
+.section_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s1_block {
+  max-width: 74%;
+  display: flex;
+  text-align: center;
+  padding: 120px 0 120px 0;
+}
+
+.s1-h5 {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 20px 0 0 0;
+  font-size: 21px;
+}
+
+.s1-p{
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.s1-h5-1:after, .s1-h5-2:after, .s1-h5-3:after {
+  content: "";
+  display: block;
+  background-color: #f57365;
+  height: 2px;
+  width: 12vh;
+  margin: 5px auto;
+}
+
+.s1-p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1280px) {
+  .s1_block {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .s1_block {
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+  }
+  .s1-img {
+    padding-top: 55px;
+  }
+  .s1-p {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .s1-p {
+    max-width: 90%;
+  }
+}
+
+
+/*------------------ 
+
+
+SECTION_2
+
+
+------------------ */
+
+
+.section_2 {
+  background-color: #f7f7f7;
+}
+
+.s2_block {
+  width: 74%;
+  padding: 150px 120px 0 0;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.s2_block_2 {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+}
+
+.s2-h5 {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 100px 0 0 0;
+  font-size: 21px;
+}
+
+.s2-h5:after {
+  content: "";
+  display: block;
+  background-color: #f57365;
+  height: 2px;
+  width: 9vh;
+  margin: 7px 0 14px 0;
+}
+
+.s2-p {
+  font-size: 19px;
+  font-family: 'Lato', sans-serif;
+  line-height: 30px;
+}
+
