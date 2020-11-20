@@ -569,7 +569,7 @@ SECTION_4
 }
 
 .s4-1 {
-  background: url(.//img/s4-1.png) no-repeat;
+  background: url(./img/s4-1.png) no-repeat;
 }
 .s4-2 {
   background: url(./img/s4-2.png) no-repeat;
